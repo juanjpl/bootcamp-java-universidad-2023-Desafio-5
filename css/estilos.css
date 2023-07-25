@@ -19,37 +19,27 @@
   box-sizing: border-box;
 }
 
-
-
-    body{
-        background-color: #FDB10B;
-        display: flex;
-        flex-direction: column;
-        width: 80vw;
-        margin:0 auto;
-        height: max-content;
-    } 
+body {
+  background-color: #fdb10b;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 0 auto;
+  height: max-content;
+}
 
 @media only screen and (min-width: 992px) {
-    body{
-        background-color: #FE8535;
-        width: 100%;
-    } 
+  body {
+    background-color: #fe8535;
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 1200px) {
-    body {
-        background-color: #FDB10B;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: max-content;
-        background-color: #B20000;
-      }
+  body {
+
+    background-color: #b20000;
+  }
 }
-
-
-
-
 
 header {
   display: flex;
@@ -57,6 +47,8 @@ header {
   justify-content: center;
   height: 30vh;
 }
+
+
 
 header > h1 {
   margin: auto 0;
@@ -69,54 +61,41 @@ header > h1 {
 }
 
 @media only screen and (min-width: 992px) {
-    header > h1 {
-        margin: auto 0;
-        font-family: var(--font-mulish);
-        font-size: var(--font-size-40pt);
-        font-weight: var(--font-weight-bold);
-        color: var(--color-blue-france);
-        height: max-content;
-      }
+  header > h1 {
+    font-size: var(--font-size-40pt);
+
+  }
 }
 @media only screen and (min-width: 1200px) {
-    header > h1 {
-        margin: auto 0;
-        font-family: var(--font-mulish);
-        font-size: var(--font-size-40pt);
-        font-weight: var(--font-weight-bold);
-        color: var(--color-blue-france);
-        height: max-content;
-      }
+  header > h1 {
+    margin: auto 0;
+  
+  }
 }
+
+
+
 main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: max-content;
   width: 100%;
-  margin:0 auto;
+  margin: 0 auto;
   border: 1px solid black;
 }
 
 @media only screen and (min-width: 992px) {
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        height: max-content;
-
-      }
+  main {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 @media only screen and (min-width: 1200px) {
-    main {
-        display: flex;
-        flex-wrap:nowrap;
-        flex-direction: row;
-        justify-content: space-around;
-        height: 70vh;
-
-      }
+  main {
+    flex-wrap: nowrap;
+    height: 70vh;
+  }
 }
 
 .card {
@@ -125,7 +104,7 @@ main {
   justify-content: flex-end;
   margin: 0.5rem auto;
   width: 100%;
-  height:30vh;
+  height: 30vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -135,26 +114,18 @@ main {
 }
 
 @media only screen and (min-width: 992px) {
-    .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin: 1rem;
-        width: 40%;
-        height: 50vh;
-
-      }
+  .card {
+    margin: 1rem;
+    width: 40%;
+    height: 50vh;
+  }
 }
 @media only screen and (min-width: 1200px) {
-    .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin:auto 0.5rem ;
-        width: 20%;
-        height:40vh;
-    
-      }
+  .card {
+    margin: auto 0.5rem;
+    width: 20%;
+    height: 40vh;
+  }
 }
 
 .card > h2 {
