@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+:root {
+  --font-mulish: "Mulish", sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --font-size-40pt: 53px;
+  --font-size-21pt: 22px;
+
+  --color-blue-france: #3957f1;
+  --color-blue-dark: #15163d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+    body{
+        background-color: #FDB10B;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin:0 auto;
+        height: max-content;
+    } 
+
+@media only screen and (min-width: 992px) {
+    body{
+        background-color: #FE8535;
+        width: 100%;
+    } 
+}
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: #FDB10B;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        background-color: #B20000;
+      }
+}
+
+
+
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 30vh;
+}
+
+header > h1 {
+  margin: auto 0;
+  font-family: var(--font-mulish);
+  font-size: 40px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-blue-france);
+  height: max-content;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+    header > h1 {
+        margin: auto 0;
+        font-family: var(--font-mulish);
+        font-size: var(--font-size-40pt);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-blue-france);
+        height: max-content;
+      }
+}
+@media only screen and (min-width: 1200px) {
+    header > h1 {
+        margin: auto 0;
+        font-family: var(--font-mulish);
+        font-size: var(--font-size-40pt);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-blue-france);
+        height: max-content;
+      }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: max-content;
+  width: 100%;
+  margin:0 auto;
+  border: 1px solid black;
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        height: max-content;
+
+      }
+}
+@media only screen and (min-width: 1200px) {
+    main {
+        display: flex;
+        flex-wrap:nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 70vh;
+
+      }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0.5rem auto;
+  width: 100%;
+  height:30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 3px 3px 4px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 4px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 4px -1px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (min-width: 992px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 1rem;
+        width: 40%;
+        height: 50vh;
+
+      }
+}
+@media only screen and (min-width: 1200px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin:auto 0.5rem ;
+        width: 20%;
+        height:40vh;
+    
+      }
+}
+
+.card > h2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  font-family: var(--font-mulish);
+  font-size: var(--font-size-21pt);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-blue-dark);
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px;
+}
+
+.card-one {
+  background-image: url(../rcs/mujer1.jpg);
+}
+.card-two {
+  background-image: url(../rcs/hombre1.jpg);
+}
+.card-three {
+  background-image: url(../rcs/mujer2.jpg);
+}
+.card-four {
+  background-image: url(../rcs/hombre2.jpg);
+}
