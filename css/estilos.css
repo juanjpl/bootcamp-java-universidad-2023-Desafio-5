@@ -6,11 +6,14 @@
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 
-  --font-size-40pt: 53px;
-  --font-size-21pt: 22px;
+  --font-size-68pt: 91px;
+  --font-size-36pt: 48px;
+  --font-size-24pt: 32px;
+  --font-size-21pt: 28px;
+  --font-size-18pt: 24px;
 
-  --color-blue-france: #3957f1;
-  --color-blue-dark: #15163d;
+  --color-blue-france: #0a2ff1;
+  --color-white: #ffffff;
 }
 
 * {
@@ -20,7 +23,6 @@
 }
 
 body {
-  background-color: #fdb10b;
   display: flex;
   flex-direction: column;
   width: 80vw;
@@ -30,59 +32,53 @@ body {
 
 @media only screen and (min-width: 992px) {
   body {
-    background-color: #fe8535;
-    width: 100%;
+ 
+    width: 95%;
   }
 }
 @media only screen and (min-width: 1200px) {
-  body {
 
-    background-color: #b20000;
-  }
 }
 
 header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   height: 30vh;
 }
 
+@media only screen and (min-width: 992px) {
 
+}
+@media only screen and (min-width: 1200px) {
+}
 
 header > h1 {
   margin: auto 0;
   font-family: var(--font-mulish);
-  font-size: 40px;
+  font-size: var(--font-size-36pt);
   font-weight: var(--font-weight-bold);
   color: var(--color-blue-france);
   height: max-content;
-  text-align: center;
 }
 
 @media only screen and (min-width: 992px) {
   header > h1 {
-    font-size: var(--font-size-40pt);
+    font-size: var(--font-size-68pt);
 
   }
 }
 @media only screen and (min-width: 1200px) {
-  header > h1 {
-    margin: auto 0;
-  
-  }
+
 }
-
-
 
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   height: max-content;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid black;
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -104,7 +100,8 @@ main {
   justify-content: flex-end;
   margin: 0.5rem auto;
   width: 100%;
-  height: 30vh;
+  height: 40vh;
+  border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,41 +112,47 @@ main {
 
 @media only screen and (min-width: 992px) {
   .card {
-    margin: 1rem;
-    width: 40%;
-    height: 50vh;
+    margin: 0.5rem;
+    width: 48%;
+    height: 45vh;
   }
 }
 @media only screen and (min-width: 1200px) {
   .card {
     margin: auto 0.5rem;
-    width: 20%;
-    height: 40vh;
+    width: 24%;
+    height: 35vh;
   }
 }
 
-.card > h2 {
+.card > h2,
+.card > p {
   display: flex;
   justify-content: space-around;
+  text-align: center;
   margin: 0 auto;
   font-family: var(--font-mulish);
   font-size: var(--font-size-21pt);
-  font-weight: var(--font-weight-regular);
-  color: var(--color-blue-dark);
-  background-color: #ffffff;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
   width: 100%;
-  padding: 20px;
+  padding: 5px;
+}
+
+.card > p {
+  font-size: var(--font-size-18pt);
+  font-weight: var(--font-weight-regular);
 }
 
 .card-one {
-  background-image: url(../rcs/mujer1.jpg);
+  background-image: url(../rcs/ProgramasInternacionales.png);
 }
 .card-two {
-  background-image: url(../rcs/hombre1.jpg);
+  background-image: url(../rcs/ParcticasProfesionales.png);
 }
 .card-three {
-  background-image: url(../rcs/mujer2.jpg);
+  background-image: url(../rcs/Becas.png);
 }
 .card-four {
-  background-image: url(../rcs/hombre2.jpg);
+  background-image: url(../rcs/CampusVirtual.png);
 }
